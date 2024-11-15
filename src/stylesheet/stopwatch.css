@@ -1,0 +1,67 @@
+.stopwatch-controls{
+    background-color: #222242;
+    width: 50%;
+    margin: auto;
+  
+}
+.watch {
+    width: 250px;
+    height: 250px;
+    background-color: #151538;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    transition: all 0.2s ease; 
+    box-shadow: none;
+    animation: glowAnimation 2s ease-in-out infinite; 
+}
+
+@keyframes glowAnimation {
+    0%,100%{
+        box-shadow: 0px 0px 32px -12px rgba(33, 160, 40, .5);
+    }
+    50%{
+        box-shadow: 0px 0px 32px 3px rgba(33, 160, 40, .5);
+    }
+
+}
+
+
+.timings{
+    margin: auto;
+    font-size: xx-large;
+    font-weight: 500;
+    color: #563FC4;
+    
+}
+
+.control-button{
+   
+    margin: auto;
+    margin-top: 20px; 
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 60%;
+}
+
+button{
+    background-color: transparent;
+    width: 120px;
+    height: 50px;
+    border: 1.5px solid white;
+    border-radius: 25px;
+    color: white;
+    transition: all .2s ease;
+    outline: 0;
+
+}
+
+button:hover{
+    border: 1.5px solid rgba(255, 165, 0, 0.8);
+    color:rgba(255, 165, 0, 0.8);
+    box-shadow: 0px 4px 27px -12px #F6B400;
+}
